@@ -1,0 +1,56 @@
+$topicColor: rgb(101, 18, 184);
+$btnColor: rgb(57, 212, 177);
+
+body {
+  font-family: sans-serif;
+  background-color: #fcfcfc;
+  color: #444;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+#header {
+  height: 100px;
+}
+
+#btn {
+  border-radius: 6px;
+  padding: 4px 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: $topicColor;
+  background-color: #fff;
+  border: 1px solid $topicColor;
+  margin-top: 31px;
+
+  &:hover {
+    border: 0;
+    background-color: $btnColor;
+    color: #fff;
+    padding: 4px 40px;
+    transition: color 0.4s;
+    transition: background-color 0.4s;
+    transition: padding 0.3s;
+
+  }
+
+}
+
+#title {
+  float: left;
+  color: $topicColor;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.hide-me {
+  display: none;
+}
+
+p:not(#title) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
